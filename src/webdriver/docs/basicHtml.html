@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Automated Tools Test Site</title>
+        <link href="../css/styles.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="../script/script.js"></script>
+
+        <script type="text/javascript">
+			function doCell()
+		    {
+                var x=document.getElementById('htmlTable').rows[2].cells;
+				alert(" inner HTML is: " +  x[1].innerHTML);
+
+		    }
+        </script>
+
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="logo"></div>
+        </div>
+        <div id="main-page">
+            <div id="left-column">
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="basicHtml.html">
+                                <span>Basic HTML</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms.html">
+                                <span>Forms</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dynamicContent.html">
+                                <span>Dynamic Content</span>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="cssXPath.html">
+                                <span>CSS/XPath</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-column">
+                <h1>Basic HTML</h1>
+
+                <h2>Paragraph</h2>
+                <p id="paragraph1">
+                This is some text in a paragraph with id <i>paragraph1</i>.
+                This sentence has <u>underlined</u>, <i>italic</i> and <b>bold</b> text.
+                </p>
+
+                <h2>Spans</h2>
+                <span id="span1" name="span1">
+                    This is some text in a span with id <i>span1</i> and name <i>name1</i>.
+                </span>
+
+                <h2>Divs</h2>
+                <div id="div1">
+                    This is some text in a div with id <i>div1</i>.
+                </div>
+
+                <h2>Links</h2>
+                Click <a href="forms.html">here</a> to go to the forms page.
+
+                <h2>Tables</h2>
+                <table id="htmlTable" class="htmlTable">
+                    <tr>
+                        <td>Header 1</td>
+                        <td>Header 2</td>
+                        <td>Header 3</td>
+                    </tr>
+                    <tr>
+                        <td>Value 1</td>
+                        <td>Value 2</td>
+                        <td>Value 3</td>
+                    </tr>
+                    <tr>
+                        <td>Value 1</td>
+                        <td id="TableVal2">Value 2</td>
+                        <td rowspan="2">Value 3 over 2 rows</td>
+                    </tr>
+                    <tr>
+                        <td>Value 1</td>
+                        <td>Value 2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Value over 2 columns</td>
+                        <td>Value 3</td>
+                    </tr>
+                </table>
+
+                <h2>Images</h2>
+                <p>
+                An image with src of <i>images/apple.jpg</i>
+                <br/>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="../images/apple.jpg" width="300">
+                        </td>
+                        <td>
+                            <img src="../images/apple.jpg" width="150">
+                        </td>
+                        <td>
+                            <img src="../images/apple.jpg" width="75">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p>Number of anchors:
+        <script type="text/javascript">
+		document.write(document.anchors.length);
+        </script></p>
+        <p>Number of areas/links:
+		<script type="text/javascript">
+		document.write(document.links.length);
+        </script></p>
+        <p>Number of images:
+		<script type="text/javascript">
+		document.write(document.images.length);
+        </script></p>
+
+        <input type="button" onclick="doCell()" value="Alert Table cell">
+        <div id="footer">&copy;2012 Edgewords Limited</div>
+
+    </body>
+</html>

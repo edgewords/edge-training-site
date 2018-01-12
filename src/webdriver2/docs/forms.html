@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Forms</title>
+        <link href="../css/styles.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="../script/script.js"></script>
+        <script type="text/javascript" src="../script/jquery-1.6.4.min.js"></script>        
+    </head>
+    
+    <body>
+        <div id="header">
+            <div id="logo"></div>
+        </div>    
+        <div id="main-page">
+            <div id="left-column">
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="basicHtml.html">
+                                <span>Basic HTML</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms.html">
+                                <span>Forms</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dynamicContent.html">
+                                <span>Dynamic Content</span>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="cssXPath.html">
+                                <span>CSS/XPath</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-column">
+                <h1>Forms</h1>
+                
+                <p>
+                This form has an id of <i>theForm</i>.
+                </p>
+                
+                <form id="theForm">
+                    <table class="formTable">
+                        <tr>
+                            <td>Text Input with id/name <i>textInput</i> <span class="red">*</span></td>
+                            <td>
+                                <input class="formInput" type="text" id="textInput" name="textInput"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Text Area with id/name <i>textArea</i></td>
+                            <td>
+                                <textarea id="textArea" name="textArea" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Checkbox with id/name <i>checkbox</i></td>
+                            <td>
+                                <input type="checkbox" id="checkbox" name="checkbox"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select with id/name <i>select</i></td>
+                            <td>
+                                <select id="select" name="select">
+                                    <option checked value="Selection One">Selection One</option>
+                                    <option value="Selection Two">Selection Two</option>
+                                    <option value="Selection Three">Selection Three</option>                                                                        
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Radio buttons with id/name <i>radio</i>
+                            </td>
+                            <td>
+                                <input checked="checked" type="radio" name="radio" id="one" value="One"/>One
+                                <input type="radio" name="radio" id="two" value="Two" />Two
+                                <input type="radio" name="radio" id="three" value="Three"/>Three
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Password input with id/name <i>password</i>
+                            </td>
+                            <td>
+                                <input class="formInput" type="password" name="password" id="password"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                File selector with id/name <i>file</i>
+                            </td>
+                            <td>
+                                <input type="file" name="file" id="file"/>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td></td>
+                            <td>
+                                <a href="#" onclick="javascript:submitForm();return false;" class="orange-button">Submit</a>  <a href="#" onclick="javascript:clearForm();return false;" class="orange-button">Clear</a>                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><span class="red">*</span> Mandatory field.
+                    </table>
+                </form>
+                <div id="formResults">
+                    <table class="htmlTable">
+                        <tr>
+                            <td>Type</td>
+                            <td>id</td>
+                            <td>Value</td>
+                        </tr>
+                        <tr>
+                            <td>Text input</td>
+                            <td>textInput</td>
+                            <td><span id="textInputValue"></span></div>
+                        </tr>
+                        <tr>
+                            <td>Text area</td>
+                            <td>textArea</td>
+                            <td><span id="textAreaValue"></span></div>
+                        </tr>
+                        <tr>
+                            <td>Select</td>
+                            <td>select</td>
+                            <td><span id="selectValue"></span></div>
+                        </tr>
+                        <tr>
+                            <td>Checkbox</td>
+                            <td>checkbox</td>
+                            <td><span id="checkboxValue"></span></div>
+                        </tr>
+                        <tr>
+                            <td>Radio buttons</td>
+                            <td>textInput</td>
+                            <td><span id="radioValue"></span></div>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td>password</td>
+                            <td><span id="passwordValue"></span></div>
+                        </tr>
+                        <tr>
+                            <td>File Input</td>
+                            <td>file</td>
+                            <td><span id="fileValue"></span></div>
+                        </tr>                                                                                                                        
+                    </table>
+                    <p/>
+                    <a href="#" onclick="javascript:returnToForm();return false;" class="orange-button">Back to form</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">&copy;2012 Edgewords Limited</div>       
+    </body>
+</html>

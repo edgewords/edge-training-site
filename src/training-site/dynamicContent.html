@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Automated Tools Test Site</title>
+        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="script/script.js"></script>
+        <script type="text/javascript" src="script/jquery-1.6.4.min.js"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="logo"></div>
+        </div>
+        <div id="main-page">
+            <div id="left-column">
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="basicHtml.html">
+                                <span>Basic HTML</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms.html">
+                                <span>Forms</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dynamicContent.html">
+                                <span>Dynamic Content</span>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="cssXPath.html">
+                                <span>CSS/XPath</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-column">
+                <h1>Dynamic Content</h1>
+                <h2>Dynamic id</h2>
+                <div id="id">This sentence is in a div element with a dynamic id that changes every 10 minutes. It is currently <span style="font-weight:bold;">id</span>.</div>
+                <h2>Alert</h2>
+                Click <a href="#" onclick="javascript:causeAlert();return false;">here</a> to cause an alert.
+
+                <h2>Pop-up Window</h2>
+                Click <a href="#" onclick="return popUpWindow();">here</a> to open a pop-up window.
+
+                <h2>Asynchronous Content<span id="spinner-holder"><img src="images/ajax-loader.gif"/></span></h2>
+                <p>
+                Press the <i>Load Content</i> button to load some dynamic content. You can change the delay to mimic a slow server.
+                <p>
+                Delay in seconds <input style="width:25px;" class="formInput" size="3" id="delay" type="text" value="2"/>
+                <p>
+                <a class="orange-button" href="#" onclick="javascript:loadAjax();return false;">Load Content</a> <a class="orange-button" href="#" onclick="javascript:clearAjax();return false;">Clear Content</a>
+
+                <div id="ajaxTarget"></div>
+            </div>
+        </div>
+        <div id="footer">&copy;2012 Edgewords Limited</div>
+    </body>
+    <script>
+        function updateId() {
+            var date = new Date;
+            var time = date.getTime();
+            $('#right-column div:first').attr('id', 'dynid' + Math.round(time/600000));
+            $('#right-column span:first').html('dynid' + Math.round(time/600000));
+
+            setTimeout('updateId()', 600000);
+        }
+
+        updateId();
+    </script>
+</html>

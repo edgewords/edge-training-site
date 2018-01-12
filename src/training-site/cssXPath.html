@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Automated Tools Test Site</title>
+        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+        <link href="css/jquery.colourPicker.css" type="text/css" rel="stylesheet"/>
+        <link href="css/jquery-ui-1.8.17.custom.css" type="text/css" rel="stylesheet"/>        
+        <script type="text/javascript" src="script/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="script/jquery.colourPicker.js"></script>
+        <script type="text/javascript" src="script/jquery-ui-1.8.17.custom.min.js"></script>        
+    </head>
+    
+    <body>
+        <div id="header">
+            <div id="logo"></div>
+        </div>    
+        <div id="main-page">
+            <div id="left-column">
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="basicHtml.html">
+                                <span>Basic HTML</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="forms.html">
+                                <span>Forms</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dynamicContent.html">
+                                <span>Dynamic Content</span>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a href="cssXPath.html">
+                                <span>CSS/XPath</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-column">
+                <h1>CSS/XPath</h1>
+
+                <h2>Colour Attributes</h2>
+    
+                <p>
+                Click the icon (XPath = <span class="xpath">div[@id='colour-picker']//a</span>) to open 
+                the colour picker.
+                <p>
+                Each coloured square on picker has a <i>rel</i> attribute with 
+                the hex value of the colour e.g. <span class="xpath">//a[@rel='38fff8']</span>.
+                <p>
+                The large coloured block will have a css style with <i>background-color</i> equal to the 
+                selected colour i.e. <span class="xpath">style="background-color:#38fff8;"</span> selected with
+                <span class="xpath">//div[@id='colour-block']/@style</span>.
+    
+                <div id="colour-block"></div>
+                                        
+                <div id="colour-picker">
+                <p>
+                    <select name="colour">
+                        <option value="ffffff">#ffffff</option>
+                        <option value="ffccc9">#ffccc9</option>
+                        <option value="ffce93">#ffce93</option>
+                        <option value="fffc9e">#fffc9e</option>
+                        <option value="ffffc7">#ffffc7</option>
+                        <option value="9aff99">#9aff99</option>
+                        <option value="96fffb">#96fffb</option>
+                        <option value="cdffff">#cdffff</option>
+                        <option value="cbcefb">#cbcefb</option>
+                        <option value="cfcfcf">#cfcfcf</option>
+                        <option value="fd6864">#fd6864</option>
+                        <option value="fe996b">#fe996b</option>
+                        <option value="fffe65">#fffe65</option>
+                        <option value="fcff2f">#fcff2f</option>
+                        <option value="67fd9a">#67fd9a</option>
+                        <option value="38fff8">#38fff8</option>
+                        <option value="68fdff">#68fdff</option>
+                        <option value="9698ed">#9698ed</option>
+                        <option value="c0c0c0">#c0c0c0</option>
+                        <option value="fe0000">#fe0000</option>
+                        <option value="f8a102">#f8a102</option>
+                        <option value="ffcc67">#ffcc67</option>
+                        <option value="f8ff00">#f8ff00</option>
+                        <option value="34ff34">#34ff34</option>
+                        <option value="68cbd0">#68cbd0</option>
+                        <option value="34cdf9">#34cdf9</option>
+                        <option value="6665cd">#6665cd</option>
+                        <option value="9b9b9b">#9b9b9b</option>
+                        <option value="cb0000">#cb0000</option>
+                        <option value="f56b00">#f56b00</option>
+                        <option value="ffcb2f">#ffcb2f</option>
+                        <option value="ffc702">#ffc702</option>
+                        <option value="32cb00">#32cb00</option>
+                        <option value="00d2cb">#00d2cb</option>
+                        <option value="3166ff">#3166ff</option>
+                        <option value="6434fc">#6434fc</option>
+                        <option value="656565">#656565</option>
+                        <option value="9a0000">#9a0000</option>
+                        <option value="ce6301">#ce6301</option>
+                        <option value="cd9934">#cd9934</option>
+                        <option value="999903">#999903</option>
+                        <option value="009901">#009901</option>
+                        <option value="329a9d">#329a9d</option>
+                        <option value="3531ff">#3531ff</option>
+                        <option value="6200c9">#6200c9</option>
+                        <option value="343434">#343434</option>
+                        <option value="680100">#680100</option>
+                        <option value="963400">#963400</option>
+                        <option value="986536">#986536</option>
+                        <option value="646809">#646809</option>
+                        <option value="036400">#036400</option>
+                        <option value="34696d">#34696d</option>
+                        <option value="00009b">#00009b</option>
+                        <option value="303498">#303498</option>
+                        <option value="000000">#000000</option>
+                        <option value="330001">#330001</option>
+                        <option value="643403">#643403</option>
+                        <option value="663234">#663234</option>
+                        <option value="343300">#343300</option>
+                        <option value="013300">#013300</option>
+                        <option value="003532">#003532</option>
+                        <option value="010066">#010066</option>
+                        <option value="340096">#340096</option>
+                        </select>
+                </label>
+                </p>
+                </div>
+                
+                <h2>Position Attributes</h2>
+                <p>
+                Click the grey rectangle (id <i>floater</i>) to change its position.
+                <p>
+                Changing the position of the rectangle will toggle its css <i>float</i> attribute and its text content.
+                <p>
+                <div id="position-holder">
+                    <div id="floater">
+                        Click to<br/>
+                        float right
+                    </div>
+                </div>
+                
+                <h2>Size Attributes</h2>
+                <p>
+                Use the slider to change the size of the apple.
+                <p>
+                The slider handle itself is an anchor with a css class of <i>ui-slider-handle</i>. It changes
+                the <i>height</i> attribute in the image with an id of <i>apple</i> and a src of <i>../images/apple.jpg</i>.
+                <div id="slider-holder">
+                    <div id="slider"></div>
+                </div>
+                
+                <div id="size-holder">
+                    <div id="current-size">Current size <span id="height-value">150</span>px</div>
+                    <img id="apple" src="images/apple.jpg"/>
+                </div>               
+                
+            </div>
+        </div>
+        <div id="footer">&copy;2012 Edgewords Limited</div>        
+    </body>
+    <script>
+        $('#colour-picker select').colourPicker({
+            ico: 'images/jquery.colourPicker.gif', 
+            title:    false
+        });
+        
+        $('#floater').click(function() {
+            if($(this).css('float') == 'left') {
+                $(this).css('float','right');
+                $(this).html('Click to<br/>float left');
+            } else {
+                $(this).css('float','left');
+                $(this).html('Click to<br/>float right');                
+            }
+        });
+        
+        $(function() {
+            $( "#slider" ).slider({
+                min:0,
+                max:300,
+                value:150,
+                slide: function(event,ui) {
+                    var height = $(this).slider('value');
+                    $('#apple').css('height',height);
+                    $('#height-value').text(height);
+                }
+            });
+        });
+    </script>
+</html>

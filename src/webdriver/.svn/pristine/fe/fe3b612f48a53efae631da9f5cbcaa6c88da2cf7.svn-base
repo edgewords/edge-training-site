@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "Restricted Access Area"
+AuthBasicProvider file
+AuthUserFile C:\Tools\apache\passwd\passwords
+require valid-user

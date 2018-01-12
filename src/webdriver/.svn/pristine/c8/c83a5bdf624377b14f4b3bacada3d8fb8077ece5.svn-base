@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Pop-up Window</title>
+        <link href="../css/styles.css" type="text/css" rel="stylesheet"/>
+    </head>
+    
+    <body>
+        <h1>Pop-up Window Content</h1>
+        This is some simple content in a pop-up window.
+        <p/>
+        <a href="#" onclick="self.close()" class="orange-button">Close Window</a>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Restricted Access Area"
+AuthBasicProvider file
+AuthUserFile C:\Tools\apache\passwd\passwords
+require valid-user
+
+ErrorDocument  401	"/phpsite1/cgi-bin/errorhandler.pl"

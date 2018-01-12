@@ -1,0 +1,35 @@
+#!C:\Perl64\bin\perl.exe
+use CGI qw(:standard);
+use warnings;
+
+
+sub printpageheader {
+    print "Content-type:  text/html\n\n";
+	print "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>\n";
+	print "<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">\n";
+	print "<head>\n";
+    print "<title>Automated Tools Test Site</title>\n";
+	print "<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>";
+    print "<link href='../css/styles.css' type='text/css' rel='stylesheet'/>\n";
+    print "<script type='text/javascript' src='../script/httpsscript.js'></script>\n";
+    print "<script type='text/javascript' src='../script/jquery-1.6.4.min.js'></script>\n";
+	print "</head>\n";
+}
+
+
+
+package main;
+#simple script to check its there 
+	my $query = new CGI;
+
+	printpageheader();
+	print "<body>\n";
+	print "<center>\n";
+	
+	foreach my $key (keys %ENV) {
+    print "$key --> $ENV{$key}<br>";
+	}
+	print "</center>\n";
+	print "</body>\n";
+	print "</html>";
+	

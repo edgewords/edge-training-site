@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Automated Tools Test Site</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="script/httpsscript.js"></script>
+        <script type="text/javascript" src="script/jquery-1.6.4.min.js"></script>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="logo"></div>
+        </div>
+        <div id="main-page">
+            <div id="left-column">
+                <div id="menu">
+                    <ul>
+                        <li>
+							<a href="sdocs/auth.php">
+							<!-- <a href="#" onclick="javascript:showResponse();return false;"> -->
+                                <span>Login To Restricted Area</span>
+                            </a>
+                        </li>
+
+                        <li class="last">
+							<a href="docs/index.html">
+                                <span>Access Basic Examples Area</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-column">
+			<h1>Web Testing Index Page</h1>
+			<p>
+			The object of this page is simply to provide links to either the basic web pages with demonstrations of simple html functionality, or alternatively, provide authenticated access to a more complex site.
+			</p>			
+			</div>
+        </div>
+        <div id="footer">&copy;2014 Edgewords Limited</div>
+    </body>
+</html>
